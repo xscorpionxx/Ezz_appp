@@ -142,7 +142,6 @@ class Homelogic {
        }, body: {"firebase_token": value});
        var body2 = jsonDecode(response2.body);
        if (body2["status"] == true) {
-         Navigator.of(context).pop("dialog");
          sharedPreferences.clear();
        }
        FlutterRestart.restartApp();
